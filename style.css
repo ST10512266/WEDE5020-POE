@@ -1,0 +1,219 @@
+/*start of navigation bar*/
+nav{
+
+padding: 1rem 5%;
+
+border-bottom: 1px solid rgb(73, 70, 70);
+backdrop-filter: blur(15px);
+margin-bottom: 2rem;
+overflow: hidden;
+box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.20);
+border-radius: 8px;
+display: flex ;
+align-items: center;
+justify-content: space-between;
+flex-wrap: wrap;}
+
+
+.logo img{width: 190px;
+height: 80px;}
+
+.nav-links{list-style: none;
+display: flex;
+gap: 2rem;
+flex-wrap: wrap;
+}
+
+.nav-links li a{position: sticky;
+text-decoration: none;
+font-weight: 600;
+color: white;} 
+
+.nav-links li a.active{color: white;
+    background: rgb(255, 255, 255,0.25);
+border-radius: 12px;
+padding: 4px;
+margin: 4px;}
+
+
+.nav-links li a:hover{color: white;
+background: rgb(255, 255, 255,0.25);
+box-shadow: 0 10px 25px rgba(0, 0, 0, 0.20);
+padding: 4px;
+margin: 4px;
+border-radius: 12px;}
+
+button{background-color: rgb(0, 72, 255);
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+color: white;
+font-weight: bold;
+border-radius: 5px;
+padding: 5px;
+margin: 5px;
+cursor: pointer;}
+
+button:hover{background-color: rgb(71, 66, 66);
+transition: 3s;
+color: white;}
+/*end of navigation bar*/
+
+/*start of hero section styles*/
+.main-container{background-image: url(images/background.image.png);
+background-position: center;
+background-attachment: fixed;
+background-size: cover;
+
+height: 100vh;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;}
+
+.title{font-size: 250%;
+font-weight: 900;
+margin-top: 250px;
+text-align: center;
+color: white;}
+
+.title span{color: white}
+.co-title{ font-size: 250%;
+font-weight: 900;
+text-align: center;
+color: white;}
+
+.sub-title{color: white;
+text-align: center;}
+
+.co-subtitle{color: white;
+text-align: center;}
+
+.badge{text-align: center;
+background: grey;
+color: white;
+width: 15%;
+margin-left: 41%;
+border-radius: 12px;
+}
+
+
+/*end of hero section styles*/
+
+
+
+body{background-color: rgb(65, 63, 63);
+margin: 0;
+padding: 0;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body h1,h2,h3{color: white;}
+
+body p{color: white;}
+/*service page styles*/
+.main-gallery{ display: flex;
+flex-wrap: wrap;
+gap: 3rem;
+justify-content: center;
+padding: 20px;
+}
+
+body ul li{color: white;}
+body ol li{color: white;}
+
+/*flexbox  for images*/
+.image-container{width: 280px;
+text-align: center;
+background:  rgb(65, 63, 63);
+border-radius: 12px;
+box-shadow: 0 0 40px rgb(4, 3, 3) ;
+}
+
+
+
+.image-container p{color: white;}
+
+.image-container img{width: 100%;
+    height: 220px;
+object-fit: cover;
+border-radius: 12px;}
+/*end of service page styles*/
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*contact page styles*/
+.contact-container{
+    display: flex;
+    background: rgb(71, 66, 66);
+    border-radius: 16px;
+    overflow: hidden
+    ;margin: 10%;
+    
+    backdrop-filter: blur(10px);
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0,0,.5);
+}
+
+.contact-info{flex: 1;
+padding: 30px;
+background-color: rgb(65, 63, 63);
+display: grid;}
+
+.contact-info p{margin-bottom: 10px;
+line-height: 1.5;
+color: white;}
+.contact-info h1,h2{color: white;}
+.contact-form{
+    flex: 1;
+    padding: 30px;
+    background-color: rgb(71, 66, 66);
+}
+
+.contact-form h2{margin-bottom: 20px;
+color: white;}
+
+.contact-form form{display: flex;
+flex-direction: column;}
+
+.contact-form input,
+.contact-form textarea{margin-bottom: 15px;
+padding: 10px;
+border: none;
+border-radius: 6px;
+outline: none;}
+
+.contact-form button{padding: 10px;
+background-color: white;
+border: none;
+border-radius: 5px;
+color: rgb(71, 66, 66);}
+/*hover button*/
+.contact-form button:hover{background-color: rgba(0, 0, 0, 0.20);
+color: white;}
+/*end of contact page styles*/
+
+/*About us page*/
+.owner{float: left;
+margin-left: 15px;
+width: 15%;
+height: 10%;}
+
+.background-info{color: white;}
+.achievements{color: white;}
+/*end of about us page*/
+
+/*skills page*/
+.main{display: flex;
+flex-wrap: wrap;
+gap: 30px;
+justify-content: center;
+padding: 20px;
+}
+.main i{padding-left: 0%;}
+.skills{width: 280px;
+text-align: center;
+border: none;
+border-radius: 2%;
+background: rgb(65, 63, 63);
+box-shadow: 0 5px 15px rgba(0, 0,0,.5);
+}

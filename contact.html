@@ -3,38 +3,68 @@
 <head>
     
     <title>Contact page:Sphathali inspection</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial scale=1.0">
 </head>
-<header>
-    <h1>SPHATHALI INSPECTION AND SERVICES</h1>
-    </header>
-<nav> 
-    <a href="Index.html">home</a>
-    <a href="About us.html">About us</a>
-    <a href="service.html">service</a>
-    <a href="Skill.html">skills</a>
-    <a href="pricing.html">prices</a>
-    <a href="contact.html">contacts</a>
-    <button>REQUEST SERVICE</button>
+ <div>
+    <header> 
+
+    <!--navigation bar-->
+<nav class="navigation"> 
+    <div class="logo"><img src="images/logo.jpeg" alt="logo"></div>
+    <ul class="nav-links">
+    <li><a href="Index.html">home</a></li>
+    <li><a href="About us.html">About us</a></li>
+    <li><a href="service.html">service</a></li>
+   <li><a href="Skill.html">skills</a></li>
+    <li><a href="pricing.html">prices</a></li>
+    <li><a href="contact.html" class="active">contacts</a></li>
+    </ul>
+    <div class="btn">
+        <button>Request service</button>
+    </div>
 </nav>
-<hr>
+ 
+    </header>
+    </div>
+
 <body>
     <h1> CONTACT US</h1>
     <h3>WE ARE ALWAYS HAPPY TO HELP OUR CUSTOMERS, CONTACT US TO GET THE HELP YOU WANT,JUST ONE CALL YOU WILL GET ALL THE HELP YOU WANT</h3>
-<p>Contact Mr SV Radebe at:073 817 7761</p>
-<h3>OR</h3>
-<p>akwandesv@gmail.com</p>
-<h4>Adress</h4>
-<p>1564 Bhengu street</p>
-<p>Mpumalanga Standerton</p>
-<p>2430</p>
-<p>SEND A MESSAGE WITH A QUESTION YOU WANT TO ASK, WE CAN GET BACK TO YOU WITHIN AN HOUR </p>
-<p>YOUR DETAILS</p>
+<!--owner's contact information-->
+<div class="contact-container">
+    <div class="contact-info">
+        <h2>Contact Us</h2>
+
+<p class="phone-number">
+    <strong>contacts:</strong>073 817 7761
+</p>
+
+<p class="email">
+   <strong>Email:</strong> akwandesv@gmail.com</p>
+
+<p class="Adress">
+  <strong>Adress</strong>  1564 Bhengu street,Mpumalanga Standerton, 2430</p>
+
+    </div>
+<!--message box-->
+<div class="contact-form">
+<h2>Get in touch</h2>
+
+<form>
 <input placeholder="Enter your name" type="text">
 <input placeholder="Enter your surname" type="text">
 <input placeholder="Enter email" type="email">
 <input placeholder="enter phone number" type="number">
+
 <p>MESSAGE BOX</p>
-<input placeholder="Your message" type="text">
+    <textarea rows="10" cols="50" placeholder="Type your message"></textarea><br>
+<button type="submit" >Submit</button>
+</form>
+</div>
+</div>
+
 <hr>
 <footer>
 <p>&#169,2026 SPHATHALI INSPECTION AND SERVICES. ALL right reserved</p>
