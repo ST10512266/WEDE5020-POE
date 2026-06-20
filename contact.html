@@ -4,9 +4,28 @@
     
     <title>Contact page:Sphathali inspection</title>
     <link rel="stylesheet" href="style.css">
+
+
+<script src="js/script.js"></script>
+     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.14.2/jquery-ui.js"></script>
+ 
+ 
     <meta charset="UTF-8">
-    <meta name="viewpoint" content="width=device-width, initial scale=1.0">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+
+    <script>
+function validateForm() {
+  let x = document.forms["name"]["surname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+</script>
 </head>
+<body>
+    
  <div>
     <header> 
 
@@ -14,22 +33,22 @@
 <nav class="navigation"> 
     <div class="logo"><img src="images/logo.jpeg" alt="logo"></div>
     <ul class="nav-links">
-    <li><a href="Index.html">home</a></li>
+    <li><a href="index.html">home</a></li>
     <li><a href="About us.html">About us</a></li>
     <li><a href="service.html">service</a></li>
    <li><a href="Skill.html">skills</a></li>
     <li><a href="pricing.html">prices</a></li>
     <li><a href="contact.html" class="active">contacts</a></li>
     </ul>
-    <div class="btn">
-        <button>Request service</button>
+    <div>
+        <a href="#form" class="btn">Request service</a>
     </div>
 </nav>
  
     </header>
     </div>
 
-<body>
+
     <h1> CONTACT US</h1>
     <h3>WE ARE ALWAYS HAPPY TO HELP OUR CUSTOMERS, CONTACT US TO GET THE HELP YOU WANT,JUST ONE CALL YOU WILL GET ALL THE HELP YOU WANT</h3>
 <!--owner's contact information-->
@@ -49,25 +68,46 @@
 
     </div>
 <!--message box-->
+
 <div class="contact-form">
 <h2>Get in touch</h2>
+ 
+<form id="form">
 
-<form>
-<input placeholder="Enter your name" type="text">
-<input placeholder="Enter your surname" type="text">
-<input placeholder="Enter email" type="email">
-<input placeholder="enter phone number" type="number">
+<input id="Name" placeholder="Enter your name" type="text">
+ 
+
+<input id="surname" placeholder="Enter your surname" type="text">
+<input id="email" placeholder="Enter email" type="email">
+ 
+<input id="phoneNumber" placeholder="enter phone number" type="number" required pattern="[0-9] {10}">
+
 
 <p>MESSAGE BOX</p>
-    <textarea rows="10" cols="50" placeholder="Type your message"></textarea><br>
-<button type="submit" >Submit</button>
+    <textarea id="textarea" rows="10" cols="50" placeholder="Type your message"></textarea><br>
+<button type="submit">submit</button>
+</div>
 </form>
 </div>
 </div>
+
+
+   
+
+  
+
+
+
+
+
+
+
+
 
 <hr>
 <footer>
 <p>&#169,2026 SPHATHALI INSPECTION AND SERVICES. ALL right reserved</p>
 </footer>
+
 </body>
 </html>

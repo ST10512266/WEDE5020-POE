@@ -43,18 +43,21 @@ padding: 4px;
 margin: 4px;
 border-radius: 12px;}
 
-button{background-color: rgb(0, 72, 255);
+.btn{background-color: rgb(0, 72, 255);
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 color: white;
 font-weight: bold;
 border-radius: 5px;
 padding: 5px;
 margin: 5px;
-cursor: pointer;}
+cursor: pointer;
+text-decoration: none;}
 
-button:hover{background-color: rgb(71, 66, 66);
+
+.btn:hover{background-color: rgb(71, 66, 66);
 transition: 3s;
-color: white;}
+color: white;
+}
 /*end of navigation bar*/
 
 /*start of hero section styles*/
@@ -133,13 +136,23 @@ box-shadow: 0 0 40px rgb(4, 3, 3) ;
 .image-container img{width: 100%;
     height: 220px;
 object-fit: cover;
-border-radius: 12px;}
+border-radius: 12px;
+cursor: pointer;
+transition: opacity 0.2 ease;}
+
+.image-container img:hover{
+opacity: 0.85;
+}
+
 /*end of service page styles*/
 
 
-html{
-    scroll-behavior: smooth;
-}
+
+
+
+
+
+
 
 /*contact page styles*/
 .contact-container{
@@ -158,6 +171,7 @@ html{
 padding: 30px;
 background-color: rgb(65, 63, 63);
 display: grid;}
+
 
 .contact-info p{margin-bottom: 10px;
 line-height: 1.5;
@@ -190,6 +204,18 @@ color: rgb(71, 66, 66);}
 /*hover button*/
 .contact-form button:hover{background-color: rgba(0, 0, 0, 0.20);
 color: white;}
+
+#form-messages{
+background-color: rgba(255, 232, 232);
+border: 1px solid red;
+color: re;
+display: none;
+font-size: 12px;
+font-weight: bold;
+margin-bottom: 10px;
+padding: 10px 25px;
+max-width: 250px;
+}
 /*end of contact page styles*/
 
 /*About us page*/
@@ -210,10 +236,79 @@ justify-content: center;
 padding: 20px;
 }
 .main i{padding-left: 0%;}
+
 .skills{width: 280px;
 text-align: center;
 border: none;
 border-radius: 2%;
 background: rgb(65, 63, 63);
 box-shadow: 0 5px 15px rgba(0, 0,0,.5);
+transition: transform 0.3s ease;
+cursor: pointer;
+}
+.skills:hover{
+    transform: scale(1.03);
+}
+
+.skills.enlarge{
+    transform: scale(1.15);
+    box-shadow: 0 10px 30px rgba(0, 0,0,.5);
+    position: relative;
+    z-index: 10;
+}
+
+/*accordion*/
+
+.offered-service{
+    border: none;
+border-radius: 3%;
+background: rgb(65, 63, 63);
+box-shadow: 0 5px 15px rgba(0, 0,0,.5);
+padding: 1%;
+}
+
+
+#offeredService {
+    overflow: hidden;
+    position: relative;
+    height: 400px;
+    gap: 2px;
+    align-items: center;
+  }
+ 
+  .slide{
+    position: absolute;
+gap: 2px;
+align-items: center;}
+
+#form-messages{
+background-color: rgba(255, 232, 232);
+border: 1px solid red;
+color: re;
+display: none;
+font-size: 12px;
+font-weight: bold;
+margin-bottom: 10px;
+padding: 10px 25px;
+max-width: 250px;
+}
+  
+#zoomImage{
+    width: 300px;
+    height: auto;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+
+}
+@keyframes myAnim {
+	0% {
+		transform: scale(0.5);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+html{
+    scroll-behavior: smooth;
 }

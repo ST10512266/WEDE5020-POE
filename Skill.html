@@ -3,11 +3,13 @@
 <head>
     <title>Skills:Sphathali inspection</title>
 <link rel="stylesheet" href="style.css">
+<script src="js/script.js"></script>
 <meta charset="UTF-8">
-    <meta name="viewpoint" content="width=device-width, initial scale=1.0">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 <body>
+    
      <div>
     <header> 
 
@@ -22,14 +24,38 @@
     <li><a href="pricing.html">prices</a></li>
     <li><a href="contact.html">contacts</a></li>
     </ul>
-    <div class="btn">
-        <button>Request service</button>
+    <div>
+        <a href="contact.html" class="btn">Request service</a>
     </div>
 </nav>
  
     </header>
     </div>
 <!--skills-->
+
+<script>
+
+  document.querySelectorAll('.skills').forEach(card => {
+
+    card.addEventListener('click', () => {
+
+      // remove "enlarged" from any other card first
+
+      document.querySelectorAll('.skill-card').forEach(c => {
+
+        if (c !== card) c.classList.remove('enlarged');
+
+      });
+
+      // toggle this card
+
+      card.classList.toggle('enlarged');
+
+    });
+
+  });
+
+</script>
     <h1>Skills</h1>
     <ul>
     <p>Sphathali Insp and services have relevant skills in the business, The skills in the businesses include:
@@ -55,6 +81,8 @@
         <p>TRAINING SKILL-bieng able to train and develop people who wants to be the future engineering inspectors</p>
         </div>
         </div>
+
+
 </ul> 
 
     </p>
@@ -62,5 +90,6 @@
 <footer>
 <p>&#169,2026 SPHATHALI INSPECTION AND SERVICES. ALL right reserved</p>
 </footer>
+
 </body>
 </html>

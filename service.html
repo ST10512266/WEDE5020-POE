@@ -5,11 +5,25 @@
     <title> 
         service:Sphathali Insp
     </title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">>
     <meta charset="UTF-8">
-    <meta name="viewpoint" content="width=device-width, initial scale=1.0">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+   
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.14.2/jquery-ui.js"></script>
+<script>
+  $( function() {
+    $( "#accordion" ).accordion();
+  } );
+  </script>
+
+
+    
+
+
 </head>
 <body>
+
     <div>
     <header> 
 
@@ -17,30 +31,43 @@
 <nav class="navigation"> 
     <div class="logo"><img src="images/logo.jpeg" alt="logo"></div>
     <ul class="nav-links">
-    <li><a href="Index.html">home</a></li>
+    <li><a href="index.html">home</a></li>
     <li><a href="About us.html">About us</a></li>
     <li><a href="service.html" class="active">service</a></li>
    <li><a href="Skill.html">skills</a></li>
     <li><a href="pricing.html">prices</a></li>
     <li><a href="contact.html">contacts</a></li>
     </ul>
-    <div class="btn">
-        <button>Request service</button>
+    <div>
+      <a href="contact.html" class="btn">Request service</a>
     </div>
 </nav>
  
     </header>
     </div>
 <!--list of services-->
+
     <h1>OUR SERVICE</h1>
-    <ol>
-<li><h2>Pressure Vessel inspection</h2></li>
+
+    <div id="accordion">
+<h3 class="offered-service">Pressure Vessel inspection</h3>
+<div>
 <p>The inspection of pressure vessels and pipe systems by ensuring compliance with safety regulations.And prevent failure through regular,often mandatory,checks,Following the rquirements of PER,SANS 347, and MHSA act</p>
-<li><h2>Hydraulic and Pneumatic Testing</h2></li>
+</div>
+
+<h3 class="offered-service">Hydraulic and Pneumatic Testing</h3>
+<div>
 <p>Conducting pressure tests on equipment by Checking for leaks and structural integrity ,making sure that the systems are safe and working properly </p>
-<li><h2>Compliance and safety guidance</h2></li>
+</div>
+
+
+<h3 class="offered-service">Compliance and safety guidance</h3>
+<div>
 <p>Offering guidlines on the requirements of the MHSA(Mine Health Safety Act), PER(Pressure Equipment Regulations), and SANS 347 standards</p>
-<li><h2>Supply equipment</h2></li>
+</div>
+
+<h3 class="offered-service">Supply equipment</h3>
+<div>
 <p>which are:</p>
 <ul>
 <li>Safety and control valves</li>
@@ -50,31 +77,61 @@
 <li>welding inspection tools</li>
 <li>Skilled labour(QC and Artisans)</li>
 </ul>
-
-<li><h2>Welding inspection service</h2></li>
-<p>Provide qualified welding inspectors who will provide quality control, compliance, and safety assurance for fabricated structures. The service include visual inspecting, non destructive testing(NDT) sich as ultrasonic or magnetic particle testing and destructive testing to detect flaws like cracks, porosity and lack of fusion</p>
-<li><h2>Skill development</h2></li>
-<p>We help youth community who are interested in inspection by offering them skill development and job opportunities.</p>
-
-    </ol>
-    <!--pictures of services we offer-->
-    <div class="main-gallery">
-    <div class="image-container">
-        <p><strong>pressure vessel</strong></p>
-    <img src="images/pressure vessel.jpg" alt="pressure vessel">
-    </div>
-    <div class="image-container">
-       <p><strong>welding</strong></p>
- <img src="images/welding.jpg" alt="welding" width="400px">
-    </div>   
-<div class="image-container">
-<p><strong>Contruction site(boiler plant)</strong></p>
-<img src="images/WhatsApp Image 2026-04-17 at 16.08.24.jpeg" alt="site" width="400px" height="200px"><br>
 </div>
-    </div>
+
+<h3 class="offered-service">Welding inspection service</h3>
+<div>
+<p>Provide qualified welding inspectors who will provide quality control, compliance, and safety assurance for fabricated structures. The service include visual inspecting, non destructive testing(NDT) sich as ultrasonic or magnetic particle testing and destructive testing to detect flaws like cracks, porosity and lack of fusion</p>
+</div>
+
+<h3 class="offered-service">Skill development</h3>
+<div>
+<p>We help youth community who are interested in inspection by offering them skill development and job opportunities.</p>
+</div>
+</div>
+
+
+    <!--pictures of services we offer-->
+
+   
+ 
+   
+<div class="main-gallery">
+        <div class="image-container" id="zoomImage">
+<p><strong>Pressure Vessel inspection</strong></p>
+<img src="images/pressure vessel.jpg" alt="pressure vessels">
+        </div>
+         <div class="image-container"id="zoomImage">
+<p><strong>inspection service</strong></p>
+<img src="images/welding.jpg" alt="welding" >
+        </div>
+    
+ <div class="image-container" id="zoomImage">
+  <p><strong>contruction sit(boiler plant)</strong></p>
+<img  src="images/WhatsApp Image 2026-04-17 at 16.08.24.jpeg" >
+ </div>
+        </div>
+
+ 
+
+
+
+
+
+
+
+
+ <script src="js/script.js"></script>
+
+ </script>
+</body>
+</html>
+
     <hr>
 <footer>
 <p>&#169,2026 SPHATHALI INSPECTION AND SERVICES. ALL right reserved</p>
 </footer>
+
+
 </body>
 </html>
