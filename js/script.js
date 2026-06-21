@@ -58,8 +58,8 @@ const phoneNumber= document.getElementById(`phoneNumber`)
 const form = document.getElementById(`form`)
  const messages = document.getElementById('message')
 
-form.addEventListener('submit', function (event){
-event.preventDefault();
+form.addEventListener('submit'), function (event){
+event.preventDefault()
+  ;}
 
-}
-     
+
